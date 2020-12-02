@@ -1,129 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <div>
-    
-  Features
-  Pricing
-  Resources
 
-  Login
-  Sign Up
+    Features
+    Pricing
+    Resources
 
-  More than just shorter links
+    Login
+    Sign Up
 
-  Build your brand’s recognition and get detailed insights 
-  on how your links are performing.
+    More than just shorter links
 
-  Get Started
+    Build your brand’s recognition and get detailed insights
+    on how your links are performing.
+
+    Get Started
   </div>
+  <main>
+    <!-- Section shorten and cards -->
+    <section class="section">
+      <form id="formShorten" class="section-shorten">
 
-  <!-- Section shorten and cards -->
-  <section class="section">
-    <form id="formShorten" class="section-shorten">
+        <div>
+          <input type="text" id="txtShorten" placeholder="Shorten a link here...">
+          <span id="spanError" style="display: none;">Please add a link</span>
+        </div>
 
-      <div>
-        <input type="text" id="txtShorten" placeholder="Shorten a link here...">
-        <span id="spanError" style="display: none;">Please add a link</span>
+        <button id="btnShorten">Shorten It!</button>
+
+      </form>
+
+      <div class="cont-advanced">
+        <h1>Advanced Statistics</h1>
+
+        <p>
+          Track how your links are performing across the web with our
+          advanced statistics dashboard.
+        </p>
       </div>
 
-      <button id="btnShorten">Shorten It!</button>
 
-    </form>
+      <div class="cont-cards">
 
-    <div class="cont-advanced">
-      <h1>Advanced Statistics</h1>
+        <div class="card">
+          <div class="card-body">
+            <div class="card-icon">
+              <img src="./images/icon-brand-recognition.svg" alt="">
+            </div>
+            <h2>Brand Recognition</h2>
+            <p>
+              Boost your brand recognition with each click. Generic links don’t
+              mean a thing. Branded links help instil confidence in your content.
+            </p>
+          </div>
+          <div class="line-cards"></div>
+        </div>
+        <div class="card">
+          <div class="card-body">
 
-      <p>
-        Track how your links are performing across the web with our 
-        advanced statistics dashboard.
-      </p>
+            <div class="card-icon">
+              <img src="./images/icon-detailed-records.svg" alt="">
+            </div>
+            <h2>Detailed Records</h2>
+            <p>
+              Gain insights into who is clicking your links. Knowing when and where
+              people engage with your content helps inform better decisions.
+            </p>
+          </div>
+          <div class="line-cards-2"></div>
+        </div>
+
+        <div class="card">
+          <div class="card-body">
+            <div class="card-icon">
+              <img src="./images/icon-fully-customizable.svg" alt="">
+            </div>
+            <h2>Fully Customizable</h2>
+            <p>
+              Improve brand awareness and content discoverability through customizable
+              links, supercharging audience engagement.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="boost">
+      <h2>Boost your links today</h2>
+      <button>Get Started</button>
     </div>
 
+  </main>
 
-    <div class="cont-cards">
+  <footer>
 
-      <div class="card">
-        <div class="card-body">
-          <div class="card-icon">
-            <img src="./images/icon-brand-recognition.svg" alt="">
-          </div>
-          <h2>Brand Recognition</h2>
-          <p>
-            Boost your brand recognition with each click. Generic links don’t 
-            mean a thing. Branded links help instil confidence in your content.
-          </p>
-        </div>
-        <div class="line-cards"></div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          
-          <div class="card-icon">
-            <img src="./images/icon-detailed-records.svg" alt="">
-          </div>
-          <h2>Detailed Records</h2>
-          <p>
-            Gain insights into who is clicking your links. Knowing when and where 
-            people engage with your content helps inform better decisions.
-          </p>
-        </div>
-        <div class="line-cards-2"></div>
-      </div>
+    <img class="f_logo" src="images/logo-white.svg" alt="logo ">
 
-      <div class="card">
-        <div class="card-body">
-          <div class="card-icon">
-            <img src="./images/icon-fully-customizable.svg" alt="">
-          </div>
-          <h2>Fully Customizable</h2>
-          <p>
-            Improve brand awareness and content discoverability through customizable 
-            links, supercharging audience engagement.
-          </p>
-        </div>
-      </div>
+    <div class="f_f">
+      <h4>Features</h4>
+      <p>Link Shortening</p>
+      <p>Branded Links</p>
+      <p>Analytics</p>
     </div>
-  </section>
 
+    <div class="f_r">
+      <h4>Resources</h4>
+      <p>Blog</p>
+      <p>Developers</p>
+      <p>Support</p>
+    </div>
 
-  Boost your links today
+    <div class="f_c">
+      <h4>Company</h4>
+      <p>About</p>
+      <p>Our Team</p>
+      <p>Careers</p>
+      <p>Contact</p>
+    </div>
 
-  Get Started
+    <div class="f_m">
+      <div class="m_img"></div>
+      <div class="m_img"></div>
+      <div class="m_img"></div>
+      <div class="m_img"></div>
+    </div>
 
-  Features
+  </footer>
 
-  Link Shortening
-  Branded Links
-  Analytics
-
-  Resources
-
-  Blog
-  Developers
-  Support
-
-  Company
-
-  About
-  Our Team
-  Careers
-  Contact
-  
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
   </div>
   <script src="./js/shorten.js"></script>
 </body>
+
 </html>

@@ -12,9 +12,20 @@ $backImageShortenMobile: url("./images/bg-shorten-mobile.svg");
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
-body {
+* {
+   font-family: 'Poppins', sans-serif;
    margin: 0;
    padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   position: relative;
+   top: 0;
+   left: 0;
+   background-color: white;
+   font-size: 18px;
+   font-weight: 500;
 }
 
 .section {
@@ -23,10 +34,8 @@ body {
    flex-direction: column;
    padding: 0rem 5rem 5rem 5rem;
    justify-content: center;
-   font-family: "Poppins";
 
    h1 {
-      font-family: "Poppins";
       font-weight: 700;
    }
 
@@ -52,7 +61,6 @@ body {
       align-items: center;
       h3 {
          margin-top: 0px;
-         font-family: "Poppins";
       }
 
    }
@@ -123,7 +131,6 @@ body {
       border: none;
       border-radius: 4px;
       padding: .75rem .75rem;
-      font-family: "Poppins";
       display: block;
       width: 95%;
       margin-bottom: 10px;
@@ -140,7 +147,6 @@ body {
       border: none;
       border-radius: 4px;
       margin-left: .75rem;
-      font-family: "Poppins";
       flex: 0.1;
       cursor: pointer;
    }
@@ -149,6 +155,155 @@ body {
 
 .invalidInput {
    border: 2px solid red !important;
+}
+
+.boost {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 15.5rem;
+   background-image: url("images/bg-boost-desktop.svg");
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   background-color: $darkViolet;
+
+   h2 {
+       margin-top: -.2rem;
+       padding-bottom: 1.5rem;
+       color: white;
+       font-size: 2.4rem;
+   }
+
+   button {
+       width: 12.5rem;
+       height: 3.5rem;
+       border-radius: 9in;
+       font-size: 1.25rem;
+       font-weight: 700;
+       color: white;
+       outline: none;
+       border: none;
+       text-decoration: none;
+       background-color: $cyan;
+       transition: all .3s ease-in-out;
+
+       &:hover {
+           background-color: hsl(180, 64%, 69%);
+           color: white;
+       }
+   }
+}
+
+footer{
+   position: relative;
+   width: 100%;
+   padding: 4.2rem 11.2vw 3.2rem 11.2vw;
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+   align-items: flex-start;
+   background-color: $veryDarkViolet;
+   .f_logo{
+       position: absolute;left:11.2vw;
+   }
+
+   .f_m{
+       margin-left: 1rem;
+       width:11rem;
+       display: flex;
+       justify-content: space-between;
+       flex-direction: row;
+       .m_img{
+           width: 30px;
+           height: 30px;
+           background-image: url("images/icon-facebook.svg");
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: 100% 100%;
+           transition: all .3s ease-in-out;
+           &:hover{
+               background-image: url("images/icon-facebook-cyan.svg");
+           }
+           &:nth-child(2){
+               background-image: url("images/icon-twitter.svg");
+           }
+           &:nth-child(2):hover{
+               background-image: url("images/icon-twitter-cyan.svg");
+           }
+           &:nth-child(3){
+               background-image: url("images/icon-pinterest.svg");
+           }
+           &:nth-child(3):hover{
+               background-image: url("images/icon-pinterest-cyan.svg");
+           }
+           &:nth-child(4){
+               background-image: url("images/icon-instagram.svg");
+           }
+           &:nth-child(4):hover{
+               background-image: url("images/icon-instagram-cyan.svg");
+           }
+       }
+   }
+
+   .f_c{
+       margin-left: 1rem;
+       margin-right: 5vw;
+       color:white;
+
+       h4{
+           font-size: 1rem;
+           margin-bottom: 1.2rem;
+           font-weight: 700;
+       }
+       p{
+           margin-bottom: .6rem;
+           font-size: 1rem;
+           transition:all .3s ease-in-out;
+           &:hover{
+               color:$cyan;
+           }
+       }
+   }
+   .f_r{
+       margin-left: 1rem;
+       margin-right: 6vw;
+       color:white;
+
+       h4{
+           font-size: 1rem;
+           margin-bottom: 1.2rem;
+           font-weight: 700;
+       }
+       p{
+           margin-bottom: .6rem;
+           font-size: 1rem;
+           transition:all .3s ease-in-out;
+           &:hover{
+               color:$cyan;
+           }
+       }
+   }
+   .f_f{
+       margin-right: 3.2vw;
+       color:white;
+
+       h4{
+           font-size: 1rem;
+           margin-bottom: 1.2rem;
+           font-weight: 700;
+       }
+       p{
+           margin-bottom: .6rem;
+           font-size: 1rem;
+           transition:all .3s ease-in-out;
+           &:hover{
+               color:$cyan;
+           }
+       }
+   }
 }
 
 
@@ -261,4 +416,19 @@ body {
       }
 
    }
+
+   footer {
+
+      .f_c,
+      .f_f,
+      .f_r {
+          h4 {
+              font-size: 6vw;
+          }
+
+          p {
+              font-size: 5vw;
+          }
+      }
+  }
 }

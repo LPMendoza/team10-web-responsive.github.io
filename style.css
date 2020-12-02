@@ -1,7 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-body {
+* {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: white;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .section {
@@ -17,11 +29,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-family: "Poppins";
 }
 
 .section h1 {
-  font-family: "Poppins";
   font-weight: 700;
 }
 
@@ -66,7 +76,6 @@ body {
 
 .section .card h3 {
   margin-top: 0px;
-  font-family: "Poppins";
 }
 
 .section .line-cards {
@@ -157,7 +166,6 @@ body {
   border: none;
   border-radius: 4px;
   padding: .75rem .75rem;
-  font-family: "Poppins";
   display: block;
   width: 95%;
   margin-bottom: 10px;
@@ -175,7 +183,6 @@ body {
   border: none;
   border-radius: 4px;
   margin-left: .75rem;
-  font-family: "Poppins";
   -webkit-box-flex: 0.1;
       -ms-flex: 0.1;
           flex: 0.1;
@@ -184,6 +191,203 @@ body {
 
 .invalidInput {
   border: 2px solid red !important;
+}
+
+.boost {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 15.5rem;
+  background-image: url("images/bg-boost-desktop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: #3b3054;
+}
+
+.boost h2 {
+  margin-top: -.2rem;
+  padding-bottom: 1.5rem;
+  color: white;
+  font-size: 2.4rem;
+}
+
+.boost button {
+  width: 12.5rem;
+  height: 3.5rem;
+  border-radius: 9in;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  background-color: #2acfcf;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.boost button:hover {
+  background-color: #7de3e3;
+  color: white;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  padding: 4.2rem 11.2vw 3.2rem 11.2vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: #232127;
+}
+
+footer .f_logo {
+  position: absolute;
+  left: 11.2vw;
+}
+
+footer .f_m {
+  margin-left: 1rem;
+  width: 11rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+footer .f_m .m_img {
+  width: 30px;
+  height: 30px;
+  background-image: url("images/icon-facebook.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+footer .f_m .m_img:hover {
+  background-image: url("images/icon-facebook-cyan.svg");
+}
+
+footer .f_m .m_img:nth-child(2) {
+  background-image: url("images/icon-twitter.svg");
+}
+
+footer .f_m .m_img:nth-child(2):hover {
+  background-image: url("images/icon-twitter-cyan.svg");
+}
+
+footer .f_m .m_img:nth-child(3) {
+  background-image: url("images/icon-pinterest.svg");
+}
+
+footer .f_m .m_img:nth-child(3):hover {
+  background-image: url("images/icon-pinterest-cyan.svg");
+}
+
+footer .f_m .m_img:nth-child(4) {
+  background-image: url("images/icon-instagram.svg");
+}
+
+footer .f_m .m_img:nth-child(4):hover {
+  background-image: url("images/icon-instagram-cyan.svg");
+}
+
+footer .f_c {
+  margin-left: 1rem;
+  margin-right: 5vw;
+  color: white;
+}
+
+footer .f_c h4 {
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+
+footer .f_c p {
+  margin-bottom: .6rem;
+  font-size: 1rem;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+footer .f_c p:hover {
+  color: #2acfcf;
+}
+
+footer .f_r {
+  margin-left: 1rem;
+  margin-right: 6vw;
+  color: white;
+}
+
+footer .f_r h4 {
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+
+footer .f_r p {
+  margin-bottom: .6rem;
+  font-size: 1rem;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+footer .f_r p:hover {
+  color: #2acfcf;
+}
+
+footer .f_f {
+  margin-right: 3.2vw;
+  color: white;
+}
+
+footer .f_f h4 {
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+
+footer .f_f p {
+  margin-bottom: .6rem;
+  font-size: 1rem;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+footer .f_f p:hover {
+  color: #2acfcf;
 }
 
 @media (max-width: 375px) {
@@ -325,6 +529,16 @@ body {
         flex-wrap: wrap;
     width: 100%;
     cursor: pointer;
+  }
+  footer .f_c h4,
+  footer .f_f h4,
+  footer .f_r h4 {
+    font-size: 6vw;
+  }
+  footer .f_c p,
+  footer .f_f p,
+  footer .f_r p {
+    font-size: 5vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
