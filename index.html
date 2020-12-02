@@ -7,15 +7,12 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <div>
+    
   Features
   Pricing
   Resources
@@ -29,28 +26,76 @@
   on how your links are performing.
 
   Get Started
+  </div>
 
-  Shorten It!
+  <!-- Section shorten and cards -->
+  <section class="section">
+    <form id="formShorten" class="section-shorten">
 
-  Advanced Statistics
+      <div>
+        <input type="text" id="txtShorten" placeholder="Shorten a link here...">
+        <span id="spanError" style="display: none;">Please add a link</span>
+      </div>
 
-  Track how your links are performing across the web with our 
-  advanced statistics dashboard.
+      <button id="btnShorten">Shorten It!</button>
 
-  Brand Recognition
+    </form>
 
-  Boost your brand recognition with each click. Generic links don’t 
-  mean a thing. Branded links help instil confidence in your content.
+    <div class="cont-advanced">
+      <h1>Advanced Statistics</h1>
 
-  Detailed Records
+      <p>
+        Track how your links are performing across the web with our 
+        advanced statistics dashboard.
+      </p>
+    </div>
 
-  Gain insights into who is clicking your links. Knowing when and where 
-  people engage with your content helps inform better decisions.
 
-  Fully Customizable
+    <div class="cont-cards">
 
-  Improve brand awareness and content discoverability through customizable 
-  links, supercharging audience engagement.
+      <div class="card">
+        <div class="card-body">
+          <div class="card-icon">
+            <img src="./images/icon-brand-recognition.svg" alt="">
+          </div>
+          <h2>Brand Recognition</h2>
+          <p>
+            Boost your brand recognition with each click. Generic links don’t 
+            mean a thing. Branded links help instil confidence in your content.
+          </p>
+        </div>
+        <div class="line-cards"></div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          
+          <div class="card-icon">
+            <img src="./images/icon-detailed-records.svg" alt="">
+          </div>
+          <h2>Detailed Records</h2>
+          <p>
+            Gain insights into who is clicking your links. Knowing when and where 
+            people engage with your content helps inform better decisions.
+          </p>
+        </div>
+        <div class="line-cards-2"></div>
+      </div>
+
+      <div class="card">
+        <div class="card-body">
+          <div class="card-icon">
+            <img src="./images/icon-fully-customizable.svg" alt="">
+          </div>
+          <h2>Fully Customizable</h2>
+          <p>
+            Improve brand awareness and content discoverability through customizable 
+            links, supercharging audience engagement.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   Boost your links today
 
@@ -79,5 +124,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+  <script src="./js/shorten.js"></script>
 </body>
 </html>
