@@ -5,6 +5,7 @@ $veryDarkViolet: hsl(260, 8%, 14%);
 $white: #fff;
 
 $cyan: hsl(180, 66%, 49%);
+$hoverBtnCyan: hsl(180, 88%, 59%);
 $darkViolet: hsl(257, 27%, 26%);
 
 $backImageShortenDesk: url("./images/bg-shorten-desktop.svg");
@@ -35,8 +36,20 @@ body {
    padding: 0rem 5rem 5rem 5rem;
    justify-content: center;
 
+   input {
+      font-family: "Poppins";
+   }
+
+   input:focus {
+      outline: none;
+   }
+
    h1 {
       font-weight: 700;
+   }
+
+   button:focus {
+      outline: none;
    }
 
    .cont-advanced {
@@ -69,13 +82,13 @@ body {
       width: 100px;
       height: 10px;
       background-color: $cyan;
-      transform: translateY(1rem);
+      transform: translateY(1.75rem);
    }
 
    .line-cards-2 {
       width: 100px;
       height: 10px;
-      transform: translateY(-1rem);
+      transform: translateY(-.5rem);
       background-color: $cyan;
    }
 
@@ -87,7 +100,7 @@ body {
    }
    
    .card:nth-child(2) {
-      transform: translateY(2rem);
+      transform: translateY(2.5rem);
    }
 
    .card:nth-child(3) {
@@ -112,13 +125,75 @@ body {
    p {
       font-size: 16px;
    }
+
+   .bg-cyan {
+      background-color: $cyan;
+   }
+
+   .btn {
+      border: none;
+      border: none;
+      border-radius: 4px;
+      margin-left: .75rem;
+      font-family: "Poppins";
+      flex: 0.1;
+      cursor: pointer;
+   }
+
+   .text-white {
+      color: white;
+   }
+
+   .contShorten {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 1.75rem;
+      margin-bottom: 1rem;
+      border-radius: 4px;
+
+      h3 {
+         margin: 0;
+      }
+
+      input {
+         border: none;
+         font-size: 18px;
+         padding: 0px;
+         color: $cyan;
+         text-align: right;
+      }
+
+      button {
+         height: 40px;
+         width: 100px;
+         margin-left: 0;
+         margin-left: 1.5rem;
+      }
+   }
+
+   .bg-white {
+      background-color: white;
+   }
+
+   .btn-cyan {
+      background-color: $cyan;
+   }
+   .btn-cyan:hover {
+      background-color: $hoverBtnCyan;
+   }
+
+   .bgCopied {
+      background-color: $veryDarkBlue;
+   }
 }
 
 .section-shorten {
    background-color: $veryDarkBlue;
    background-image: $backImageShortenDesk;
    background-size: cover;
-   padding: 2rem;
+   padding: 2.5rem;
    border-radius: 4px;
    display: flex;
    align-items: baseline;
@@ -141,14 +216,16 @@ body {
       color: red;
    }
    button {
-      background-color: $cyan;
-      color: $white;
       height: 44px;
+<<<<<<< HEAD
       border: none;
       border-radius: 4px;
       margin-left: .75rem;
       flex: 0.1;
       cursor: pointer;
+=======
+      font-weight: 500;
+>>>>>>> pedro-section
    }
 
 }
@@ -390,6 +467,9 @@ footer{
       align-items: baseline;
       transform: translateY(-50px);
 
+      h3 {
+         font-size: 18px;
+      }
       input {
          border: none;
          border-radius: 4px;
@@ -407,7 +487,7 @@ footer{
          height: 44px !important;
          border: none;
          border-radius: 4px;
-         margin-left: 0rem;
+         margin-left: 0rem !important;
          font-family: "Poppins";
          flex-grow: 1;
          flex-wrap: wrap;
@@ -417,6 +497,7 @@ footer{
 
    }
 
+<<<<<<< HEAD
    footer {
 
       .f_c,
@@ -431,4 +512,36 @@ footer{
           }
       }
   }
+=======
+    .contShorten {
+       display: flex;
+       flex-wrap: nowrap;
+       align-items: center;
+       justify-content: flex-start;
+       padding: .5rem;
+       margin-bottom: 1rem;
+       border-radius: 4px;
+      
+       h3 {
+         display: flex;
+         flex-wrap: nowrap;
+         margin: 0;
+         font-size: 14px;
+       }
+
+       input {
+          border: none;
+          font-size: 18px;
+          padding: 0px;
+          color: $cyan;
+          text-align: left !important;
+       }
+
+       button {
+          height: 40px;
+          width: 100px;
+          margin-left: 0 !important;
+       }
+    }
+>>>>>>> pedro-section
 }

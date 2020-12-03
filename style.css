@@ -31,8 +31,20 @@ body {
           justify-content: center;
 }
 
+.section input {
+  font-family: "Poppins";
+}
+
+.section input:focus {
+  outline: none;
+}
+
 .section h1 {
   font-weight: 700;
+}
+
+.section button:focus {
+  outline: none;
 }
 
 .section .cont-advanced {
@@ -82,15 +94,15 @@ body {
   width: 100px;
   height: 10px;
   background-color: #2acfcf;
-  -webkit-transform: translateY(1rem);
-          transform: translateY(1rem);
+  -webkit-transform: translateY(1.75rem);
+          transform: translateY(1.75rem);
 }
 
 .section .line-cards-2 {
   width: 100px;
   height: 10px;
-  -webkit-transform: translateY(-1rem);
-          transform: translateY(-1rem);
+  -webkit-transform: translateY(-0.5rem);
+          transform: translateY(-0.5rem);
   background-color: #2acfcf;
 }
 
@@ -102,8 +114,8 @@ body {
 }
 
 .section .card:nth-child(2) {
-  -webkit-transform: translateY(2rem);
-          transform: translateY(2rem);
+  -webkit-transform: translateY(2.5rem);
+          transform: translateY(2.5rem);
 }
 
 .section .card:nth-child(3) {
@@ -140,11 +152,83 @@ body {
   font-size: 16px;
 }
 
+.section .bg-cyan {
+  background-color: #2acfcf;
+}
+
+.section .btn {
+  border: none;
+  border: none;
+  border-radius: 4px;
+  margin-left: .75rem;
+  font-family: "Poppins";
+  -webkit-box-flex: 0.1;
+      -ms-flex: 0.1;
+          flex: 0.1;
+  cursor: pointer;
+}
+
+.section .text-white {
+  color: white;
+}
+
+.section .contShorten {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 1.75rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+.section .contShorten h3 {
+  margin: 0;
+}
+
+.section .contShorten input {
+  border: none;
+  font-size: 18px;
+  padding: 0px;
+  color: #2acfcf;
+  text-align: right;
+}
+
+.section .contShorten button {
+  height: 40px;
+  width: 100px;
+  margin-left: 0;
+  margin-left: 1.5rem;
+}
+
+.section .bg-white {
+  background-color: white;
+}
+
+.section .btn-cyan {
+  background-color: #2acfcf;
+}
+
+.section .btn-cyan:hover {
+  background-color: #3af2f2;
+}
+
+.section .bgCopied {
+  background-color: #35323e;
+}
+
 .section-shorten {
   background-color: #35323e;
   background-image: url("./images/bg-shorten-desktop.svg");
   background-size: cover;
-  padding: 2rem;
+  padding: 2.5rem;
   border-radius: 4px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -177,9 +261,8 @@ body {
 }
 
 .section-shorten button {
-  background-color: #2acfcf;
-  color: #fff;
   height: 44px;
+<<<<<<< HEAD
   border: none;
   border-radius: 4px;
   margin-left: .75rem;
@@ -187,6 +270,9 @@ body {
       -ms-flex: 0.1;
           flex: 0.1;
   cursor: pointer;
+=======
+  font-weight: 500;
+>>>>>>> pedro-section
 }
 
 .invalidInput {
@@ -501,6 +587,9 @@ footer .f_f p:hover {
     -webkit-transform: translateY(-50px);
             transform: translateY(-50px);
   }
+  .section-shorten h3 {
+    font-size: 18px;
+  }
   .section-shorten input {
     border: none;
     border-radius: 4px;
@@ -520,7 +609,7 @@ footer .f_f p:hover {
     height: 44px !important;
     border: none;
     border-radius: 4px;
-    margin-left: 0rem;
+    margin-left: 0rem !important;
     font-family: "Poppins";
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
@@ -530,6 +619,7 @@ footer .f_f p:hover {
     width: 100%;
     cursor: pointer;
   }
+<<<<<<< HEAD
   footer .f_c h4,
   footer .f_f h4,
   footer .f_r h4 {
@@ -539,6 +629,44 @@ footer .f_f p:hover {
   footer .f_f p,
   footer .f_r p {
     font-size: 5vw;
+=======
+  .contShorten {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding: .5rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+  }
+  .contShorten h3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 0;
+    font-size: 14px;
+  }
+  .contShorten input {
+    border: none;
+    font-size: 18px;
+    padding: 0px;
+    color: #2acfcf;
+    text-align: left !important;
+  }
+  .contShorten button {
+    height: 40px;
+    width: 100px;
+    margin-left: 0 !important;
+>>>>>>> pedro-section
   }
 }
 /*# sourceMappingURL=style.css.map */
