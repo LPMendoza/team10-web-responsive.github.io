@@ -44,7 +44,8 @@ body {
       outline: none;
    }
 
-   h1 {
+   h1, h2, h3 {
+      color: $veryDarkBlue;
       font-weight: 700;
    }
 
@@ -52,10 +53,17 @@ body {
       outline: none;
    }
 
+   #urlCopy {
+      height: 0px;
+      border: none;
+   }
+
    .cont-advanced {
       align-self: center;
       width: 40%;
       text-align: center;
+      margin-top: 1.5rem;
+      margin-bottom: 2.75rem;
    }
 
    .cont-cards {
@@ -97,6 +105,10 @@ body {
       border-radius: 4px;
       background-color: $white;
       display: inline-block;
+
+      p {
+         color: $grayishViolet;
+      }
    }
    
    .card:nth-child(2) {
@@ -149,20 +161,34 @@ body {
       flex-wrap: wrap;
       align-items: center;
       justify-content: space-between;
-      padding: 1rem 1.75rem;
       margin-bottom: 1rem;
       border-radius: 4px;
 
-      h3 {
-         margin: 0;
+      .contOriginalLink {
+         padding: 1rem;
+         word-wrap: break-word;
       }
 
-      input {
+      p {
+         font-weight: bold;
+         font-size: 18px;
+      }
+
+      .contControlsLink {
+         padding: 1rem;
+      }
+
+      .contControlsLink label {
          border: none;
          font-size: 18px;
          padding: 0px;
          color: $cyan;
          text-align: right;
+      }
+
+      input::selection {
+         background-color: rgba(0,0,0,0);
+         color: $cyan;
       }
 
       button {
@@ -185,7 +211,7 @@ body {
    }
 
    .bgCopied {
-      background-color: $veryDarkBlue;
+      background-color: $veryDarkBlue !important;
    }
 }
 
@@ -217,15 +243,7 @@ body {
    }
    button {
       height: 44px;
-<<<<<<< HEAD
-      border: none;
-      border-radius: 4px;
-      margin-left: .75rem;
-      flex: 0.1;
-      cursor: pointer;
-=======
       font-weight: 500;
->>>>>>> pedro-section
    }
 
 }
@@ -478,7 +496,7 @@ footer{
          flex-grow: 1;
          flex-wrap: wrap;
          margin-bottom: 1rem;
-         width: 89%;
+         width: 100%;
       }
 
       button {
@@ -497,7 +515,6 @@ footer{
 
    }
 
-<<<<<<< HEAD
    footer {
 
       .f_c,
@@ -512,36 +529,46 @@ footer{
           }
       }
   }
-=======
     .contShorten {
        display: flex;
-       flex-wrap: nowrap;
+       flex-wrap: wrap;
        align-items: center;
-       justify-content: flex-start;
-       padding: .5rem;
+       justify-content: space-between;
        margin-bottom: 1rem;
        border-radius: 4px;
-      
-       h3 {
-         display: flex;
-         flex-wrap: nowrap;
-         margin: 0;
-         font-size: 14px;
-       }
 
-       input {
-          border: none;
-          font-size: 18px;
-          padding: 0px;
-          color: $cyan;
-          text-align: left !important;
-       }
+      .contOriginalLink {
+         padding: 1rem;
+         width: 100%;
+         max-width: 100%;
+         border-bottom: 1px solid $grayishViolet !important;
+      }
 
-       button {
-          height: 40px;
-          width: 100px;
-          margin-left: 0 !important;
-       }
+      p {
+         font-weight: bold;
+         font-size: 18px;
+      }
+
+      .contControlsLink {
+         width: 100%;
+         padding: 1rem;
+      }
+
+      label {
+         border: none;
+         font-size: 18px;
+         padding: 0px;
+         color: $cyan;
+         text-align: left !important;
+         margin: 0rem 0rem 1rem 0rem;
+      }
+
+      button {
+         height: 40px;
+         width: 100% !important; 
+         margin-left: 0px !important;
+         margin-top: 0px;
+         margin-top: 1rem;
+      }
     }
->>>>>>> pedro-section
 }
