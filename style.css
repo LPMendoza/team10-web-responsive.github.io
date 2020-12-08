@@ -789,8 +789,10 @@ footer .f_f p:hover {
   header section .text h1 {
     text-align: center;
     width: 100%;
-    font-size: 3rem;
-    line-height: 3.5rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    margin-bottom: .5rem;
   }
   header section .text p {
     text-align: center;
@@ -937,6 +939,58 @@ footer .f_f p:hover {
     width: 100%;
     cursor: pointer;
   }
+  .boost {
+    background-image: url("./images/bg-boost-mobile.svg");
+  }
+  .boost h2 {
+    font-size: 1.5rem;
+  }
+  footer {
+    width: 100%;
+    padding: 4.2rem 11.2vw 3.2rem 11.2vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    background-color: #232127;
+  }
+  footer .cont_logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  footer .f_logo {
+    position: relative;
+    left: 0 !important;
+  }
+  footer .f_c,
+  footer .f_f,
+  footer .f_r {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
   footer .f_c h4,
   footer .f_f h4,
   footer .f_r h4 {
@@ -946,6 +1000,10 @@ footer .f_f p:hover {
   footer .f_f p,
   footer .f_r p {
     font-size: 5vw;
+  }
+  footer .f_m {
+    width: 100%;
+    margin-left: 0px;
   }
   .contShorten {
     display: -webkit-box;

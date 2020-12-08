@@ -685,8 +685,10 @@ footer {
             h1 {
                text-align: center;
                width: 100%;
-               font-size: 3rem;
-               line-height: 3.5rem;
+               font-size: 2rem;
+               line-height: 2.5rem;
+               font-weight: 700;
+               margin-bottom: .5rem;
             }
 
             p {
@@ -811,12 +813,43 @@ footer {
       }
 
    }
-
+   
+   .boost {
+      background-image: url("./images/bg-boost-mobile.svg");
+      h2 {
+         font-size: 1.5rem;
+      }
+   }
    footer {
+      width: 100%;
+      padding: 4.2rem 11.2vw 3.2rem 11.2vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center !important;
+      align-items: flex-start;
+      background-color: $veryDarkViolet;
+
+      .cont_logo {
+         width: 100%;
+         text-align: center;
+         margin-bottom: 2rem;
+      }
+      .f_logo {
+         position: relative;
+         left: 0 !important;
+      }
 
       .f_c,
       .f_f,
       .f_r {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         margin-left: 0px !important;
+         margin-right: 0px !important;
+         width: 100%;
+         text-align: center;
+         margin-bottom: 2rem;
          h4 {
             font-size: 6vw;
          }
@@ -824,6 +857,11 @@ footer {
          p {
             font-size: 5vw;
          }
+      }
+
+      .f_m {
+         width: 100%;
+         margin-left: 0px;
       }
    }
 
