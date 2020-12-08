@@ -44,6 +44,8 @@ header {
   header nav {
     padding: 3rem 5rem !important;
     display: flex; }
+    header nav #mobile-menu {
+      display: none; }
     header nav #desktop-menu {
       flex: 1;
       display: flex;
@@ -59,10 +61,6 @@ header {
         color: white;
         border: none;
         border-radius: 50px; }
-  header .menu-btn {
-    display: none; }
-  header #mobile-menu {
-    display: none; }
 
 .section {
   background-color: #EFF1F7;
@@ -341,8 +339,7 @@ footer {
       display: flex;
       width: 100%;
       justify-content: space-between;
-      padding: 2rem;
-      padding-left: 1.5rem; }
+      padding: 2rem 1rem 1rem 1rem !important; }
       header nav #desktop-menu {
         display: none; }
     header .menu-btn {
@@ -360,8 +357,8 @@ footer {
       margin-top: 53px;
       border-radius: 10px;
       background-color: #3b3054;
-      width: 86%;
       position: absolute;
+      width: 92%;
       display: none;
       flex-direction: column;
       text-align: center; }

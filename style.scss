@@ -65,6 +65,9 @@ header{
    nav{
       padding: 3rem 5rem !important;
       display: flex;
+      #mobile-menu{
+         display: none;
+      }
       #desktop-menu{
          flex: 1;
          display:flex;
@@ -84,12 +87,6 @@ header{
          }
       }
    }
-      .menu-btn{
-         display: none;
-      }
-      #mobile-menu{
-         display: none;
-      }
    margin-bottom: 50px;
 }
 
@@ -480,8 +477,7 @@ footer{
         display: flex;
         width: 100%;
         justify-content: space-between;
-        padding: 2rem;
-        padding-left: 1.5rem;
+        padding: 2rem 1rem 1rem 1rem !important;
         
         #desktop-menu{
          display:none;
@@ -506,9 +502,9 @@ footer{
         margin-top: 53px;
         border-radius: 10px;
         background-color: $darkViolet;
-        width: 86%;
         position: absolute;
         //display none/flex
+        width: 92%;
         display: none;
         flex-direction: column;
         text-align: center;
