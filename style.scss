@@ -39,11 +39,26 @@ button:focus, a:focus {
    outline: none;
 }
 
+.btn-gs:hover,
+.btn-sg-mob:hover {
+   background-color: $hoverBtnCyan !important;
+}
+
 header {
    #mob-btn {
       display: none;
    }
 
+   #mobile-menu {
+      transform: scaleY(0);
+      transition: 0.2s ease;
+   }
+
+   .mobile-menu-showed {
+      transition: 0.2s ease;
+      transform: scaleY(1) !important;
+   }
+   
    #mob-btn:focus {
       outline: none;
    }
@@ -75,7 +90,7 @@ header {
 
       .text {
          padding: 0;
-         width: 37%;
+         width: 50%;
 
          h1 {
             text-align: left;
@@ -89,6 +104,7 @@ header {
             text-align: left;
             color: $grayishViolet;
             margin-bottom: 2rem;
+            width: 90%;
          }
 
          .btn-gs {
@@ -101,16 +117,14 @@ header {
             border: none;
             border-radius: 50px
          }
+
+         
       }
    }
 
    nav {
       padding: 3rem 5rem !important;
       display: flex;
-
-      #mobile-menu {
-         display: none;
-      }
 
       .btn-sg-mob {
          border: none;
@@ -596,12 +610,10 @@ footer {
          border-radius: 10px;
          background-color: $darkViolet;
          position: absolute;
-         //display none/flex
+         display: flex;
          width: 92%;
-         display: none;
          flex-direction: column;
          text-align: center;
-
          a {
             font-weight: bold;
             text-decoration: none;

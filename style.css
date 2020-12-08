@@ -27,12 +27,31 @@ button:focus, a:focus {
   outline: none;
 }
 
+.btn-gs:hover,
+.btn-sg-mob:hover {
+  background-color: #3af2f2 !important;
+}
+
 header {
   margin-bottom: 50px;
 }
 
 header #mob-btn {
   display: none;
+}
+
+header #mobile-menu {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+}
+
+header .mobile-menu-showed {
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  -webkit-transform: scaleY(1) !important;
+          transform: scaleY(1) !important;
 }
 
 header #mob-btn:focus {
@@ -75,7 +94,7 @@ header section .img-seat img {
 
 header section .text {
   padding: 0;
-  width: 37%;
+  width: 50%;
 }
 
 header section .text h1 {
@@ -90,6 +109,7 @@ header section .text p {
   text-align: left;
   color: #9e9aa7;
   margin-bottom: 2rem;
+  width: 90%;
 }
 
 header section .text .btn-gs {
@@ -110,10 +130,6 @@ header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-header nav #mobile-menu {
-  display: none;
 }
 
 header nav .btn-sg-mob {
@@ -690,8 +706,10 @@ footer .f_f p:hover {
     border-radius: 10px;
     background-color: #3b3054;
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     width: 92%;
-    display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
