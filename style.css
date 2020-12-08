@@ -32,13 +32,15 @@ header {
       header section .text p {
         margin-top: 0px;
         text-align: left;
-        color: #9e9aa7; }
+        color: #9e9aa7;
+        margin-bottom: 2rem; }
       header section .text .btn-gs {
+        padding: 0.75rem 3rem;
         width: fit-content;
         background-color: #2acfcf;
-        color: white;
-        padding: 0.75rem 3rem;
         font-weight: bold;
+        font-size: 18px;
+        color: white;
         border: none;
         border-radius: 50px; }
   header nav {
@@ -53,11 +55,15 @@ header {
       header nav #desktop-menu a {
         text-decoration: none;
         padding: 18px;
-        color: #9e9aa7; }
+        color: #9e9aa7;
+        font-weight: bold; }
+      header nav #desktop-menu .menu-item:active {
+        color: black; }
       header nav #desktop-menu .btn-dm {
-        padding: 9px;
+        padding: 0.75rem 3rem;
         width: fit-content;
         background-color: #2acfcf;
+        font-weight: bold;
         color: white;
         border: none;
         border-radius: 50px; }
@@ -346,7 +352,8 @@ footer {
       width: 23px;
       display: flex; }
       header .menu-btn button {
-        color: black;
+        background-color: transparent;
+        color: #3b3054;
         font-size: 23px;
         width: 23px;
         height: 23px;

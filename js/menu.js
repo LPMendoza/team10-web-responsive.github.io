@@ -1,6 +1,6 @@
 let menu_btn = document.getElementById("mob-btn");
 let mob_menu = document.getElementById("mobile-menu");
-let menu_items = document.getElementsByClassName("menu-item");
+let menu_items = document.getElementsByClassName("hm");
 
 let hide_menu = function(){
     mob_menu.style.display = mob_menu.style.display == "none" || mob_menu.style.display == "" ? "flex" : "none";

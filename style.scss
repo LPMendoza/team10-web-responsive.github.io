@@ -50,15 +50,17 @@ header{
             margin-top: 0px;
             text-align: left;
             color: $grayishViolet;
+            margin-bottom: 2rem;
          }
         .btn-gs{
-            width: fit-content;
-            background-color: $cyan;
-            color: white;
-            padding: 0.75rem 3rem;
-            font-weight: bold;
-            border: none;
-            border-radius: 50px;
+         padding: 0.75rem 3rem;
+         width: fit-content;
+         background-color: $cyan;
+         font-weight: bold;
+         font-size: 18px;
+         color: white;
+         border: none;
+         border-radius: 50px
          }
       }
    }   
@@ -76,11 +78,16 @@ header{
             text-decoration: none;
             padding: 18px;
             color: $grayishViolet;
+            font-weight: bold;
+         }
+         .menu-item:active {
+            color: black;
          }
          .btn-dm{
-            padding: 9px;
+            padding: 0.75rem 3rem;
             width: fit-content;
             background-color: $cyan;
+            font-weight: bold;
             color: white;
             border: none;
             border-radius: 50px;
@@ -488,7 +495,8 @@ footer{
         width: 23px;
         display: flex;
         button{
-           color: black;
+           background-color: transparent;
+           color: $darkViolet;
            font-size: 23px;
            width: 23px;
            height: 23px;
