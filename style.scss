@@ -233,7 +233,7 @@ body {
       border-radius: 4px;
       padding: .75rem .75rem;
       display: block;
-      width: 95%;
+      width: 100%;
       margin-bottom: 10px;
    }
 
@@ -485,9 +485,6 @@ footer{
       align-items: baseline;
       transform: translateY(-50px);
 
-      h3 {
-         font-size: 18px;
-      }
       input {
          border: none;
          border-radius: 4px;
@@ -495,10 +492,13 @@ footer{
          font-family: "Poppins";
          flex-grow: 1;
          flex-wrap: wrap;
-         margin-bottom: 1rem;
+         margin-bottom: 1rem !important;
          width: 100%;
       }
 
+      span {
+         margin-bottom: 1rem;
+      }
       button {
          background-color: $cyan;
          color: $white;
