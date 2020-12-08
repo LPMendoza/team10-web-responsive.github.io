@@ -14,22 +14,50 @@
 
 <body>
 
-  <div>
+ <header>
+    <nav>
+      <a id="logo-shortly"><img src="./images/logo.svg" alt="shortly"></a>
+      <div class="menu-btn">
+        <button id="mob-btn"><i class="fas fa-bars"></i></button>
+      </div>
 
-    Features
-    Pricing
-    Resources
+      <div id="mobile-menu">
+        <div class="first-child">
+          <a href="#" class="menu-item">Features</a>
+          <a href="#" class="menu-item">Pricing</a>
+          <a href="#" class="menu-item">Resources</a>
+        </div>
+        <hr>
+        <div class="last-child">
+          <a href="#" class="menu-item">Login</a>
+          <a href="#" class="menu-item">Sign Up</a>
+        </div>
+      </div>
 
-    Login
-    Sign Up
-
-    More than just shorter links
-
-    Build your brand’s recognition and get detailed insights
-    on how your links are performing.
-
-    Get Started
-  </div>
+     <div id="desktop-menu">
+        <div class="first-child">
+          <a href="#" class="menu-item">Features</a>
+          <a href="#" class="menu-item">Pricing</a>
+          <a href="#" class="menu-item">Resources</a>
+        </div>
+        <div class="last-child">
+          <a href="#" class="menu-item">Login</a>
+          <btn href="#" class="menu-item btn-dm">Sign Up</btn>
+        </div>
+      </div>
+      
+    </nav>
+    <section>
+      <div class="img-seat">
+        <img src="./images/illustration-working.svg" alt="">
+      </div>
+      <div class="text">
+        <h1>More than just shorter links</h1>
+        <p>Build your brand's recognition and get detailed insights on how your links are performing.</p>
+        <button class="btn-gs">Get Started</button>
+      </div>
+    </section>
+  </header>
   <main>
     <!-- Section shorten and cards -->
     <section class="section">
@@ -143,6 +171,7 @@
     </div>
 
   </footer>
+  <script src="./js/menu.js"></script>
   <script src="./js/shorten.js"></script>
 </body>
 
