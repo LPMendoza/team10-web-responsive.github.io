@@ -815,6 +815,7 @@ footer .f_f p:hover {
   }
   header section .text p {
     text-align: center;
+    width: 100%;
   }
   .section {
     padding: 0rem 1rem 2rem 1rem;
