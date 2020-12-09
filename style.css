@@ -41,6 +41,7 @@ header #mob-btn {
 }
 
 header #mobile-menu {
+  display: none;
   -webkit-transform: scaleY(0);
           transform: scaleY(0);
   -webkit-transition: 0.2s ease;
@@ -432,8 +433,8 @@ header nav #desktop-menu .btn-dm {
   -webkit-box-align: baseline;
       -ms-flex-align: baseline;
           align-items: baseline;
-  -webkit-transform: translateY(-60px);
-          transform: translateY(-60px);
+  -webkit-transform: translateY(-65px);
+          transform: translateY(-65px);
 }
 
 .section-shorten div {
@@ -922,8 +923,10 @@ footer .f_f p:hover {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    -webkit-transform: translateY(-75px);
-            transform: translateY(-75px);
+    margin-top: -4.75rem;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    margin-bottom: 1rem;
   }
   .section-shorten input {
     border: none;

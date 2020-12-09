@@ -1,6 +1,20 @@
 var API_URL = "https://api.shrtco.de/v2/shorten";
 
 var urls = [];
+var itemUrlsShortened = "urlsShortened";
+
+getUrlsShortened();
+
+function getUrlsShortened () {
+   if (localStorage.getItem(itemUrlsShortened) == "") {
+      localStorage.setItem(itemUrlsShortened, JSON.stringify([]));
+   }
+
+   urls = JSON.parse(localStorage.getItem(itemUrlsShortened)) || [];
+   showUrlsShortened();
+   setFunctionCopy();
+
+}
 
 document.getElementById("btnShorten").onclick = function (e) {
    e.preventDefault();
@@ -17,7 +31,8 @@ document.getElementById("btnShorten").onclick = function (e) {
    fetch(`${API_URL}?url=${txtShorten.value.trim()}`)
    .then(response => response.json())
    .then(link =>{ 
-      urls.push({
+
+      addUrl({
          "originalUrl": txtShorten.value,
          "urlShorten": link.result.short_link
       });
@@ -25,6 +40,40 @@ document.getElementById("btnShorten").onclick = function (e) {
       var contLinksShortened = document.getElementById("contLinksShortened");
       contLinksShortened.innerHTML = "";
 
+      showUrlsShortened();
+      setFunctionCopy();
+      
+      txtShorten.value = "";
+
+   })
+   .catch(error => alert("Error al acortar el link"));
+
+}
+
+function setFunctionCopy() {
+   var btns = Array.from(document.getElementsByClassName("btnCopy"));
+
+   btns.forEach(el => {
+      el.onclick = function (e) {
+
+         var btnCopied = Array.from(document.getElementsByClassName("bgCopied"));
+         if (btnCopied.length != 0) {
+            btnCopied[0].classList.remove("bgCopied");
+            btnCopied[0].textContent = "Copy";
+         }
+
+         document.getElementById("urlCopy").value = document.getElementById("txtShortened-" + this.id.split("-")[1]).textContent;
+         document.getElementById("urlCopy").focus();
+         document.getElementById("urlCopy").select();
+         document.execCommand("copy");
+         el.focus();
+         this.classList.add("bgCopied");
+         this.textContent = "Copied!";
+      }
+   })
+}
+
+function showUrlsShortened() {
       urls.forEach((url, index) => {
          contLinksShortened.innerHTML += 
             `<div class="contShorten bg-white">
@@ -37,33 +86,9 @@ document.getElementById("btnShorten").onclick = function (e) {
                </div>
             </div>`;
       });
-      
-      var btns = Array.from(document.getElementsByClassName("btnCopy"));
+}
 
-      btns.forEach(el => {
-         el.onclick = function (e) {
-            
-            var btnCopied = Array.from(document.getElementsByClassName("bgCopied"));
-            if(btnCopied.length != 0) {
-               btnCopied[0].classList.remove("bgCopied");
-               btnCopied[0].textContent = "Copy";
-            }
-
-            document.getElementById("urlCopy").value = document.getElementById("txtShortened-" + this.id.split("-")[1]).textContent;
-            document.getElementById("urlCopy").focus();
-            document.getElementById("urlCopy").select();
-            document.execCommand("copy");
-            this.classList.add("bgCopied");
-            this.textContent = "Copied!";
-         }
-      })
-      
-      txtShorten.value = "";
-
-   })
-   .catch(error => alert("Error al acortar el link"));
-
-   
-   
-
+function addUrl(url) {
+   urls.push(url);
+   localStorage.setItem(itemUrlsShortened, JSON.stringify(urls));
 }
