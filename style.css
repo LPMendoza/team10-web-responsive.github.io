@@ -17,6 +17,10 @@ body {
   overflow-x: hidden;
 }
 
+button, p, a {
+  font-size: 18px;
+}
+
 button, a {
   cursor: pointer;
   -webkit-transition: 0.2s ease;
@@ -79,8 +83,6 @@ header section {
 }
 
 header section .img-seat {
-  /*width: 500px;
-            height: 500px;*/
   justify-self: flex-end;
   overflow: hidden;
 }
@@ -331,10 +333,6 @@ header nav #desktop-menu .btn-dm {
       align-self: center;
 }
 
-.section p {
-  font-size: 16px;
-}
-
 .section .bg-cyan {
   background-color: #2acfcf;
 }
@@ -435,9 +433,9 @@ header nav #desktop-menu .btn-dm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transform: translateY(-65px);
           transform: translateY(-65px);
 }
@@ -454,17 +452,20 @@ header nav #desktop-menu .btn-dm {
   padding: .75rem .75rem;
   display: block;
   width: 100%;
-  margin-bottom: 10px;
+  font-size: 18px;
 }
 
 .section-shorten span {
   font-style: italic;
   color: red;
+  position: absolute;
+  margin-top: .25rem;
 }
 
 .section-shorten button {
-  height: 44px;
+  height: 51px;
   font-weight: 500;
+  padding: 0rem 1rem;
 }
 
 .invalidInput {
@@ -767,8 +768,6 @@ footer .f_f p:hover {
         flex-wrap: wrap;
   }
   header section .img-seat {
-    /*width: 500px;
-            height: 500px;*/
     justify-self: flex-end;
     overflow: hidden;
   }
@@ -944,10 +943,11 @@ footer .f_f p:hover {
             flex-grow: 1;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-bottom: 1rem !important;
+    margin-bottom: .25rem !important;
     width: 100%;
   }
   .section-shorten span {
+    position: relative;
     margin-bottom: 1rem;
   }
   .section-shorten button {
@@ -956,6 +956,7 @@ footer .f_f p:hover {
     height: 44px !important;
     border: none;
     border-radius: 4px;
+    margin-top: 1rem;
     margin-left: 0rem !important;
     font-family: "Poppins";
     -webkit-box-flex: 1;
